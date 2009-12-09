@@ -17,3 +17,9 @@ set :logging, false
 def app
    Sinatra::Application
  end
+ 
+ Spec::Runner.configure do |config|
+
+   config.mock_with :mocha
+
+ end

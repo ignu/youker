@@ -23,4 +23,22 @@ describe Youker do
     end
     
   end
+  
+  
+  describe "when creating schedules" do
+ 
+    describe "with an even number of players" do
+         
+      before(:each) do
+        @youker = Youker.new 4, ['Optimus', 'Megatron']
+        #@youker.players.expects(:shuffle!)
+      end
+      
+      it "teams every player with every other player once" do 
+        #@youker.rounds.length.should == 4
+      end
+      
+    end
+  end
+  
 end
